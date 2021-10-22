@@ -1,0 +1,8 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% for college in colleges  %}
+<li>
+<a href={% url 'college' college.pk %}> {{college.name}}</a>  
+</li>
+{% endfor %}
+{% endblock %}
